@@ -17,11 +17,12 @@ Our framework resolves the mathematical tension between structured population ec
 The repository is organized to ensure full reproducibility of the figures and analyses presented in the manuscript:
 
 ```text
-├── fig1_buteo.py         # Empirical validation using Buteo buteo vital rates
-├── fig2_archetype.py     # Fast-lived archetype transient dynamics
-├── fig3_1D_sweep.py      # One-dimensional survival advantage sweep
-├── fig4_2D_heatmap.py    # 2D stability landscape and local stability (Jacobian) analysis
-├── LICENSE               # GNU GPLv3 License
+├── fig1_buteo.py           # Empirical validation using Buteo buteo vital rates
+├── fig2_archetype.py       # Fast-lived archetype transient dynamics
+├── fig3_1D_sweep.py        # One-dimensional survival advantage sweep
+├── fig4_2D_heatmap.py      # 2D stability landscape and local stability (Jacobian) analysis
+├── reverse_engineering.py  # Mathematical derivation of the demographic projection matrices for the homozygous morphs 
+├── LICENSE                 # GNU GPLv3 License
 └── README.md
 ```
 
