@@ -17,31 +17,31 @@ Our framework resolves the mathematical tension between structured population ec
 The repository is organized to ensure full reproducibility of the figures and analyses presented in the manuscript:
 
 ```text
-├── src/                      # Core model functions and classes
-│   ├── hybrid_model.py       # Main simulation algorithm (Gamete pool + Leslie)
-│   └── stability_utils.py    # Functions for CV and Jacobian calculations
-├── scripts/                  # Scripts to reproduce manuscript figures
-│   ├── fig1_buteo.py         # Empirical validation using Buteo buteo vital rates
-│   ├── fig2_archetype.py     # Fast-lived archetype transient dynamics
-│   ├── fig3_1D_sweep.py      # One-dimensional survival advantage sweep
-│   └── fig4_2D_heatmap.py    # 2D stability landscape and contour mapping
-├── data/                     # (Optional) Any static parameter files or empirical vital rates
+├── fig1_buteo.py         # Empirical validation using Buteo buteo vital rates
+├── fig2_archetype.py     # Fast-lived archetype transient dynamics
+├── fig3_1D_sweep.py      # One-dimensional survival advantage sweep
+├── fig4_2D_heatmap.py    # 2D stability landscape and local stability (Jacobian) analysis
+├── LICENSE               # GNU GPLv3 License
 └── README.md
 ```
 
 ## Requirements
-The code is written in Python 3.8+ and relies on standard scientific libraries. You can install the dependencies using:Bashpip install numpy scipy matplotlib
+The code is written in Python 3.8+ and relies on standard scientific libraries. You can install the dependencies using:
+
+Bash 
+```pip install numpy scipy matplotlib```
 
 ## Usage
 To replicate the figures from the manuscript, simply run the corresponding script from the terminal. For example, to generate the 2D Stability Landscape (Figure 4):
 
-Bash python scripts/fig4_2D_heatmap.py
+Bash 
+```python scripts/fig4_2D_heatmap.py```
 
 Note: The 2D heatmap script simulates thousands of multigenerational evolutionary trajectories and may take a few minutes to complete depending on your hardware.
 
 ## Mathematical Appendix & Code
 
-The script stability_utils.py contains the computational implementation of the analytical derivation described in Appendix B of the manuscript. It constructs the Jacobian matrix at the non-trivial equilibrium point ($$N^*$$) and calculates the dominant eigenvalue ($$|\lambda_{dom}|$$) to explicitly detect the period-2 bifurcation thresholds.
+The explicit calculation of the Jacobian matrix and its dominant eigenvalue ($$|\lambda_{dom}|$$), as described in Appendix B of the manuscript, is fully implemented within the fig4_2D_heatmap.py (and/or fig3_1D_sweep.py) scripts. This allows users to mathematically verify the period-2 bifurcation thresholds directly alongside the visual simulations.
 
 ## Citation
 If you use this code or framework in your research, please cite the original paper:Alcántara-Rodríguez, J. A. (2026). Eco-Evolutionary Dynamics in Age-Structured Populations: A Hybrid Approach of Leslie-Lefkovitch Matrices and Density-Dependent Gamete Pools.
