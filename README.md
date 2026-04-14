@@ -28,6 +28,24 @@ The repository is organized to ensure full reproducibility of the figures and an
 ├── data/                     # (Optional) Any static parameter files or empirical vital rates
 └── README.md
 
+
+## Requirements
+The code is written in Python 3.8+ and relies on standard scientific libraries. You can install the dependencies using:Bashpip install numpy scipy matplotlib
+
+## Usage
+To replicate the figures from the manuscript, simply run the corresponding script from the terminal. For example, to generate the 2D Stability Landscape (Figure 4):
+
+Bash python scripts/fig4_2D_heatmap.py
+
+Note: The 2D heatmap script simulates thousands of multigenerational evolutionary trajectories and may take a few minutes to complete depending on your hardware.
+
+## Mathematical Appendix & Code
+
+The script stability_utils.py contains the computational implementation of the analytical derivation described in Appendix B of the manuscript. It constructs the Jacobian matrix at the non-trivial equilibrium point ($$N^*$$) and calculates the dominant eigenvalue ($$|\lambda_{dom}|$$) to explicitly detect the period-2 bifurcation thresholds.
+
+## Citation
+If you use this code or framework in your research, please cite the original paper:Alcántara-Rodríguez, J. A. (2026). Eco-Evolutionary Dynamics in Age-Structured Populations: A Hybrid Approach of Leslie-Lefkovitch Matrices and Density-Dependent Gamete Pools.
+
 ## License
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details. 
 You are free to use, modify, and distribute this software, but any derivative works must also be distributed under the same open-source terms.
