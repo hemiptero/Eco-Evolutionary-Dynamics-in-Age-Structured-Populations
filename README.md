@@ -1,6 +1,6 @@
 # Eco-Evolutionary Dynamics in Age-Structured Populations
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19582643.svg)](https://zenodo.org/records/19582643)
 *(Note: Update the Zenodo badge with your actual DOI once generated)*
 
 ## Overview
