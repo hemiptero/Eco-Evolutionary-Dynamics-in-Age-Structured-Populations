@@ -29,13 +29,15 @@ The repository is organized to ensure full reproducibility of the figures and an
 ## Requirements
 The code is written in Python 3.8+ and relies on standard scientific libraries. You can install the dependencies using:
 
-Bash 
+Bash
+
 ```pip install numpy scipy matplotlib```
 
 ## Usage
 To replicate the figures from the manuscript, simply run the corresponding script from the terminal. For example, to generate the 2D Stability Landscape (Figure 4):
 
-Bash 
+Bash
+
 ```python scripts/fig4_2D_heatmap.py```
 
 Note: The 2D heatmap script simulates thousands of multigenerational evolutionary trajectories and may take a few minutes to complete depending on your hardware.
