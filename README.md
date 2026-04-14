@@ -27,7 +27,7 @@ The repository is organized to ensure full reproducibility of the figures and an
 │   └── fig4_2D_heatmap.py    # 2D stability landscape and contour mapping
 ├── data/                     # (Optional) Any static parameter files or empirical vital rates
 └── README.md
-
+```
 
 ## Requirements
 The code is written in Python 3.8+ and relies on standard scientific libraries. You can install the dependencies using:Bashpip install numpy scipy matplotlib
