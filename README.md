@@ -1,6 +1,6 @@
 # Eco-Evolutionary Dynamics in Age-Structured Populations
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19582643.svg)](https://zenodo.org/records/19582643)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19582642.svg)](https://zenodo.org/records/19582642)
 
 ## Overview
 This repository contains the source code, simulation scripts, and mathematical derivations accompanying the manuscript: **"Eco-Evolutionary Dynamics in Age-Structured Populations: A Hybrid Approach of Leslie-Lefkovitch Matrices and Density-Dependent Gamete Pools"** (currently under review).
